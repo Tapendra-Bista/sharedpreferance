@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#C31B1B"
+        android:backgroundTintMode="src_over"
+        android:hapticFeedbackEnabled="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="309sp"
+            android:layout_height="70sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70sp"
+            android:background="@drawable/custom_boarder"
+            app:boxBackgroundColor="@color/design_default_color_primary"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A52B2B"
+            app:boxStrokeWidthFocused="5sp"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_id"
+                android:layout_width="309sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_boarder"
+                android:backgroundTintMode="screen"
+                android:hint="Enter name"
+                android:inputType="text"
+                android:textColorHint="#616161"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="309sp"
+            android:layout_height="190sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70sp"
+            android:background="@drawable/custom_boarder"
+            app:boxBackgroundColor="@color/design_default_color_primary"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A52B2B"
+            app:boxStrokeWidthFocused="5sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message_id"
+                android:layout_width="309sp"
+                android:paddingHorizontal="3sp"
+                android:layout_height="180sp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_boarder"
+                android:backgroundTintMode="screen"
+                android:gravity="start"
+                android:hint="Enter any message"
+                android:inputType="textMultiLine"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="309sp"
+            android:layout_height="60sp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/custom_boarder"
+            android:text="0"
+            android:textColorHighlight="#DBE3E2"
+            android:textColorLink="#DBE3E2"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkbox_id"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="55sp"
+            android:layout_marginTop="3sp"
+            android:textCursorDrawable="@drawable/ic_launcher_background" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
